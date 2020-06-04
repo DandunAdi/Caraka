@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O9p-Rq-JNj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hanan.ttf">
+            <string>HanacarakaNormal</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Caraka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="P26-bS-uJh">
+                                <rect key="frame" x="134" y="71" width="148" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CARAKA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFC-Fa-ozS">
+                                <rect key="frame" x="164" y="218" width="85" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" name="kWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hg-J0-wj2">
+                                <rect key="frame" x="20" y="389" width="374" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="kLightCyan"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
+                                <color key="tintColor" name="kLightCyan"/>
+                                <state key="normal" title="Aksara">
+                                    <color key="titleColor" name="kDarkBg"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iRn-e4-gap" kind="show" identifier="goToAksara" id="NJa-CJ-6nw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJQ-fN-baL">
+                                <rect key="frame" x="20" y="472" width="374" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="kLightCyan"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
+                                <color key="tintColor" name="kLightCyan"/>
+                                <state key="normal" title="Latihan Soal">
+                                    <color key="titleColor" name="kDarkBg"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ShE-te-HSo" kind="show" id="dJ9-ua-aG3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Belajar Aksara Jawa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT9-Rl-Vj0">
+                                <rect key="frame" x="134" y="250" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" name="kWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="kDarkBg"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="lVi-Ji-Idu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2041" y="123"/>
+        </scene>
+        <!--Kuis View Controller-->
+        <scene sceneID="Ulz-cF-d3b">
+            <objects>
+                <viewController id="ShE-te-HSo" customClass="KuisViewController" customModule="Caraka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pYO-uj-a0N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIx-L8-78O">
+                                <rect key="frame" x="20" y="341" width="374" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="kLightCyan"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Gajah">
+                                    <color key="titleColor" name="kDarkBg"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="ShE-te-HSo" eventType="touchUpInside" id="VBl-Qo-HcR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCz-83-2OK">
+                                <rect key="frame" x="20" y="775" width="374" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="kLightRed"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Bantuan">
+                                    <color key="titleColor" name="kWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iRn-e4-gap" kind="showDetail" id="wnX-D0-mIk"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fzk-wx-ggQ">
+                                <rect key="frame" x="20" y="849" width="374" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="kLightCyan"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gjh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="39" translatesAutoresizingMaskIntoConstraints="NO" id="2BG-VA-XOp">
+                                <rect key="frame" x="20" y="88" width="374" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HanacarakaNormal" family="Hanacaraka" pointSize="78"/>
+                                <color key="textColor" name="kYellow"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQx-fg-nPo">
+                                <rect key="frame" x="20" y="415" width="374" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="kLightCyan"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Gajah">
+                                    <color key="titleColor" name="kDarkBg"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="ShE-te-HSo" eventType="touchUpInside" id="ABx-w2-8qN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oke-df-92g">
+                                <rect key="frame" x="20" y="489" width="374" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="kLightCyan"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Gajah">
+                                    <color key="titleColor" name="kDarkBg"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="ShE-te-HSo" eventType="touchUpInside" id="fHm-Cv-Nds"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="kDarkBg"/>
+                        <viewLayoutGuide key="safeArea" id="OF2-p2-A5l"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eii-lr-Z7V"/>
+                    <connections>
+                        <outlet property="firstAnswerButton" destination="hIx-L8-78O" id="whe-EZ-kuH"/>
+                        <outlet property="progressBar" destination="fzk-wx-ggQ" id="0wS-tu-ouX"/>
+                        <outlet property="questionText" destination="2BG-VA-XOp" id="f8J-jr-SNK"/>
+                        <outlet property="secondAnswerButton" destination="aQx-fg-nPo" id="7wo-Tr-UDn"/>
+                        <outlet property="thirdAnswerButton" destination="Oke-df-92g" id="ZcM-EU-Uj1"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToHome" id="c5M-g4-XuC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvm-xs-OGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2077" y="965"/>
+        </scene>
+        <!--Aksara-->
+        <scene sceneID="64n-mV-X3f">
+            <objects>
+                <collectionViewController id="yGc-9Z-5nZ" customClass="AksaraViewController" customModule="Caraka" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="MlE-PF-UcA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="kDarkBg"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="toc-Hl-25Q">
+                            <size key="itemSize" width="90" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="Cell" id="dXf-Nz-RjK" customClass="AksaraViewCell" customModule="Caraka" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kLr-oT-UOb">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="k" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GW7-cm-hfB">
+                                            <rect key="frame" x="33.5" y="8" width="23" height="51.5"/>
+                                            <fontDescription key="fontDescription" name="HanacarakaNormal" family="Hanacaraka" pointSize="44"/>
+                                            <color key="textColor" name="kWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXW-Bq-ruq">
+                                            <rect key="frame" x="34.5" y="66" width="21.5" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" name="kLightCyan"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="GW7-cm-hfB" firstAttribute="centerX" secondItem="kLr-oT-UOb" secondAttribute="centerX" id="02T-VJ-bPx"/>
+                                        <constraint firstItem="CXW-Bq-ruq" firstAttribute="centerX" secondItem="kLr-oT-UOb" secondAttribute="centerX" id="Uit-ur-cA8"/>
+                                        <constraint firstItem="GW7-cm-hfB" firstAttribute="top" secondItem="kLr-oT-UOb" secondAttribute="top" constant="8" id="iJR-YD-w3B"/>
+                                        <constraint firstAttribute="bottom" secondItem="CXW-Bq-ruq" secondAttribute="bottom" constant="14" id="vKr-uu-bEN"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="90" height="100"/>
+                                <connections>
+                                    <outlet property="aksaraLabel" destination="GW7-cm-hfB" id="AX1-0g-HhR"/>
+                                    <outlet property="alfabetLabel" destination="CXW-Bq-ruq" id="Tpz-LP-2Yb"/>
+                                    <segue destination="EXx-ff-P4E" kind="showDetail" identifier="goToDetail" id="LIO-sx-oha"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="yGc-9Z-5nZ" id="JME-fi-Jup"/>
+                            <outlet property="delegate" destination="yGc-9Z-5nZ" id="cpX-8Z-pZ8"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Carakan" image="Ha" id="vdQ-9o-no1"/>
+                    <navigationItem key="navigationItem" title="Aksara" largeTitleDisplayMode="always" id="bzh-kb-g2s"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbK-xc-tfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4816" y="123"/>
+        </scene>
+        <!--Pasangan-->
+        <scene sceneID="Guj-ku-rPx">
+            <objects>
+                <collectionViewController id="keh-Av-2qz" customClass="PasanganViewController" customModule="Caraka" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1f0-66-JDF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="kDarkBg"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="zCW-hY-nYh">
+                            <size key="itemSize" width="90" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="PasanganCell" id="P9w-n0-WFA" customClass="PasanganViewCell" customModule="Caraka" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sSG-Rg-3Ch">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qY-nv-KhT">
+                                            <rect key="frame" x="8" y="8" width="74" height="95"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HanacarakaNormal" family="Hanacaraka" pointSize="42"/>
+                                            <color key="textColor" name="kWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8n-Sf-NQt">
+                                            <rect key="frame" x="8" y="111" width="74" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" name="kLightCyan"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="90" height="150"/>
+                                <connections>
+                                    <outlet property="aksaraLabel" destination="6qY-nv-KhT" id="5bR-0r-3oP"/>
+                                    <outlet property="alfabetLabel" destination="K8n-Sf-NQt" id="Ftw-oC-GDk"/>
+                                    <segue destination="EXx-ff-P4E" kind="showDetail" identifier="goToDetail" id="Doj-qv-xph"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="keh-Av-2qz" id="xLL-Wi-wTu"/>
+                            <outlet property="delegate" destination="keh-Av-2qz" id="IIb-99-vkV"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Pasangan" image="Sa" id="fHf-0E-SR9"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="l9P-Gm-qgv"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FLZ-DF-YQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4816" y="-607"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SnP-Ik-8Jb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iRn-e4-gap" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="d0S-AB-1lH"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BBE-Ne-vm5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="kLightRed"/>
+                        <color key="barTintColor" name="kDarkBg"/>
+                        <color key="selectedImageTintColor" name="kLightRed"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yGc-9Z-5nZ" kind="relationship" relationship="viewControllers" id="vsh-8f-RzP"/>
+                        <segue destination="keh-Av-2qz" kind="relationship" relationship="viewControllers" id="CcM-sq-Je4"/>
+                        <segue destination="7iF-I0-qRn" kind="relationship" relationship="viewControllers" id="tYv-nZ-1iT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apq-Nd-sJZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3823" y="123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FOX-nP-mX2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O9p-Rq-JNj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ogu-iA-EkS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="kYellow"/>
+                        <color key="barTintColor" name="kDarkBg"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" name="kLightRed"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
+                            <color key="textColor" name="kLightRed"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nnX-An-Xhg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXi-TC-WYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="105"/>
+        </scene>
+        <!--Sandhangan-->
+        <scene sceneID="1Z6-V3-YXl">
+            <objects>
+                <collectionViewController id="7iF-I0-qRn" customClass="SandhanganViewController" customModule="Caraka" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Imo-qx-eXu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="kDarkBg"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="lCs-gM-mUN">
+                            <size key="itemSize" width="120" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="SandhanganCell" id="hhN-W2-IdI" customClass="SandhanganViewCell" customModule="Caraka" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w9r-lu-BGw">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQC-Nl-Pvf">
+                                            <rect key="frame" x="8" y="8" width="104" height="95"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HanacarakaNormal" family="Hanacaraka" pointSize="42"/>
+                                            <color key="textColor" name="kWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Url-NJ-WRH">
+                                            <rect key="frame" x="8" y="111" width="104" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" name="kLightCyan"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="120" height="150"/>
+                                <connections>
+                                    <outlet property="aksaraLabel" destination="gQC-Nl-Pvf" id="nih-Jc-hLu"/>
+                                    <outlet property="alfabetLabel" destination="Url-NJ-WRH" id="kru-5i-zRV"/>
+                                    <segue destination="EXx-ff-P4E" kind="showDetail" identifier="goToDetail" id="U7Z-5c-1kX"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="7iF-I0-qRn" id="jyU-Ho-ZY0"/>
+                            <outlet property="delegate" destination="7iF-I0-qRn" id="lp6-41-K32"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Sandhangan" image="Pangkon" id="peG-L0-eZn"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Yp7-l7-HS8"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pz0-Oh-QaG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4816" y="860"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="VLb-vf-4BA">
+            <objects>
+                <viewController id="EXx-ff-P4E" customClass="DetailViewController" customModule="Caraka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ivz-ig-qEs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="k" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="QMe-On-0wA">
+                                <rect key="frame" x="20" y="30" width="374" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HanacarakaNormal" family="Hanacaraka" pointSize="103"/>
+                                <color key="textColor" name="kWhite"/>
+                                <color key="highlightedColor" name="kLightCyan"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ka" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mie-Ie-Rdy">
+                                <rect key="frame" x="20" y="251" width="374" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" name="kGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="kc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="766-e8-u8G">
+                                <rect key="frame" x="46" y="388" width="222" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HanacarakaNormal" family="Hanacaraka" pointSize="32"/>
+                                <color key="textColor" name="kGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kaca" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiA-ZU-xf8">
+                                <rect key="frame" x="211" y="388" width="157" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" name="kGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sfabsfkjcsancljasn sknldsj sv ds,mv ljsd dsmv sd vdslvds vlds vlds vds v dslv ds vdl" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dO-cJ-Nqa">
+                                <rect key="frame" x="46" y="451" width="322" height="357"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" name="kYellow"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="kDarkBg"/>
+                        <viewLayoutGuide key="safeArea" id="WTf-aR-Thw"/>
+                    </view>
+                    <connections>
+                        <outlet property="aksaraLabel" destination="QMe-On-0wA" id="xpj-cB-s1O"/>
+                        <outlet property="alfabetLabel" destination="mie-Ie-Rdy" id="8VU-dq-RUr"/>
+                        <outlet property="contohLabel" destination="766-e8-u8G" id="3rK-RE-ihU"/>
+                        <outlet property="ctBacaLabel" destination="wiA-ZU-xf8" id="FxR-mZ-MRo"/>
+                        <outlet property="keteranganLabel" destination="3dO-cJ-Nqa" id="eBf-xx-Ote"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ioo-gD-Js1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5700" y="123"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LIO-sx-oha"/>
+        <segue reference="NJa-CJ-6nw"/>
+        <segue reference="c5M-g4-XuC"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Ha" width="25" height="25"/>
+        <image name="Pangkon" width="25" height="25"/>
+        <image name="Sa" width="25" height="25"/>
+        <image name="logo" width="250" height="250"/>
+        <namedColor name="kDarkBg">
+            <color red="0.21199999749660492" green="0.18000000715255737" blue="0.17599999904632568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="kGray">
+            <color red="0.80800002813339233" green="0.80400002002716064" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="kLightCyan">
+            <color red="0.36100000143051147" green="0.82700002193450928" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="kLightRed">
+            <color red="0.77300000190734863" green="0.27099999785423279" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="kWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="kYellow">
+            <color red="0.80000001192092896" green="0.81199997663497925" blue="0.37599998712539673" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
